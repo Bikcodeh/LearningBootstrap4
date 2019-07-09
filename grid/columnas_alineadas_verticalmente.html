@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Alineadas verticalmente</title>
+    <style>
+        .row{
+            background-color: #e8e8e8;
+            height: 150px;
+            margin-top: 20px;
+        }
+
+        .col{
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #4d5061;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row align-items-start">
+            <div class="col">Columna #1</div>
+            <div class="col">Columna #2</div>
+            <div class="col">Columna #3</div>
+        </div>
+
+        <div class="row align-items-center">
+            <div class="col">Columna #1</div>
+            <div class="col">Columna #2</div>
+            <div class="col">Columna #3</div>
+        </div>
+
+        <div class="row align-items-end">
+            <div class="col">Columna #2</div>
+            <div class="col">Columna #1</div>
+            <div class="col">Columna #3</div>
+        </div>
+        <!-- Lo ideal es que este asi como la parte comentada, para no romper estandares, 
+            ya que seria un mal diseño, pero para que se vea bien, de momento entonces lo dejamos
+            sin crear fila y columna 
+        <div class="row">
+            <div class="col">
+                <h4>Alineacion independiente</h4>
+            </div>
+        </div> -->
+        <br><br>
+        <h3>Alineacion independiente</h3>
+        <div class="row">
+            <div class="col align-self-start">Columna #1</div>
+            <div class="col align-self-center">Columna #2</div>
+            <div class="col align-self-end">Columna #3</div>
+        </div>
+    </div>
+
+
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>
