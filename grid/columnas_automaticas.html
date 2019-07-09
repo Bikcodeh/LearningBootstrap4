@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Plantilla</title>
+    <style>
+        .row > div {
+            text-align: center;
+            margin: 10px 0;
+            background-color: #f2f2f2;
+        }
+        .uno { background-color: #f2f2f2; }
+        .dos { background-color: #dbdbdb; }
+        .tres { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <!-- Si queremos que la columna tome el tamaño solo del contenido, entonces
+                    podemos usar la clase col-auto, igual tambien podemos hacer que tome 
+                    el tamaño automatico dependiendo de las medidas.-->
+            <div class="col-12 col-sm uno">
+                <h3> Columna #1</h3>
+            </div>
+            <div class="col-12 col-sm col-md-auto dos">
+                <h3> Columna #2</h3>
+            </div>
+            <div class="col-12 col-sm tres">
+                <h3> Columna #3</h3>
+            </div>
+        </div>
+        <!-- Si queremos agrupar columnas, podemos o crear otro row y ponerlas debajo
+                o bien podemos apoyarnos de un utility de bootstrap el w-100 -->
+        <div class="row">
+            <div class="col">
+                <h4>Columna #4</h4>
+                <p>Pariatur ex fugiat irure incididunt ut.</p>
+            </div>
+            <div class="col">
+                <h4>Columna #5</h4>
+                <p>Pariatur ex fugiat irure incididunt ut.</p>
+            </div>
+
+            <div class="w-100"></div>
+
+            <div class="col">
+                <h4>Columna #6</h4>
+                <p>Pariatur ex fugiat irure incididunt ut.</p>
+            </div>
+            <div class="col">
+                <h4>Columna #7</h4>
+                <p>Pariatur ex fugiat irure incididunt ut.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>
