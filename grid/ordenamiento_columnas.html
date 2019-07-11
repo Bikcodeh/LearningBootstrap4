@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Alineadas Horizontalmente</title>
+    <style>
+        .row {
+            background-color: #e8e8e8;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        .columna{
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #4d5061;
+        }
+    </style>
+</head>
+<body>
+    <!-- Investigar mas sobre Flex-->
+   <div class="container">
+       <div class="row justify-content-between d-flex mb-3">
+           <div class="columna col-2 p-2 order-last">Columa #1</div>
+           <div class="columna col-2 p-2 order-3">Columa #2</div>
+           <div class="columna col-2 p-2 order-1">Columa #3</div>
+           <div class="columna col-2 p-2 order-2">Columa #4</div>
+       </div>
+   </div>
+
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>
