@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Responsive utilities</title>
+    <style>
+        .columna{
+            background: #2191fb;
+            color: #fff;
+            padding: 20px;
+            margin-bottom: 20px; 
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <!-- Mostrar el div solo en pantallas extra pequeñas-->
+            <div class="columna col d-block d-sm-none">XS - Extra Small</div>
+            <!-- Mostrar el div solo en pantallas pequeñas-->
+            <div class="columna col d-none d-sm-block d-md-none">SM - Small</div>
+            <!-- Mostrar el div solo en pantallas medianas-->
+            <div class="columna col d-none d-md-block d-lg-none">MD - Medium</div>
+            <!-- Mostrar el div solo en pantallas grandes-->
+            <div class="columna col d-none d-lg-block d-xl-none">LG - Large</div>
+            <!-- Mostrar el div solo en pantallas extra grandes-->
+            <div class="columna col d-none d-xl-block">XL - Extra Large</div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Atque repellendus architecto cum quaerat dolores vitae esse suscipit eos voluptas. 
+                    Neque aut blanditiis vel delectus quasi nobis reiciendis possimus odio recusandae?
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
