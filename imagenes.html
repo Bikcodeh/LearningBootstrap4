@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Imagenes</title>
+</head>
+<style>
+    .columna{
+        background: #f2f2f2;
+        border: 1px solid #424242;
+        margin-top: 20px;
+    }
+</style>
+<body>
+    
+    <div class="container-fluid">
+        <!-- Quitarle el padding a la fila -->
+        <div class="row no-gutters">
+            <div class="columna col-6">
+                <!-- Hacer que la imagen se adapte al contenedor 'img-fluid'-->
+                <img class="img-fluid float-left  img-thumbnail" src="http://lorempixel.com/200/200/" alt="">
+                <img class="img-fluid float-right img-thumbnail" src="http://lorempixel.com/200/200/" alt="">
+            </div>
+
+            <hr>
+            
+        </div>
+
+        <div class="row">
+            <div class="columna col-8">
+                <figure class="figure">
+                    <img class="img-fluid  rounded" src="http://lorempixel.com/500/500/" alt="">
+                    <figcaption class="figure-caption">
+                            <p class="text-center">Lorem ipsum dolor sit amet consectetu.</p>
+                    </figcaption>
+                </figure>
+                
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
