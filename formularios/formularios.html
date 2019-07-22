@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Plantilla</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row mt-3 justify-content-center">
+            <div class="col-4-auto">
+                <form action="">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="pass">Password</label>
+                        <input type="password" class="form-control" name="pass" id="password" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" id="mensaje" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="pais">Pais</label>
+                        <select class="form-control" name="pais" id="pais">
+                            <option value="mexico">Mexico</option>
+                            <option value="colombia">Colombia</option>
+                            <option value="Venezuela">Venezuela</option>
+                            <option value="chile">Chile</option>
+                        </select>
+                    </div>
+                    <div class="form-check">
+                        <label for="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" name="sexo" class="form-check-input mr-2" id="hombre">Hombre
+                            </label>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                         <label for="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" name="sexo" class="form-check-input mr-2" id="mujer">Mujer
+                            </label>
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                         <label for="form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox" name="terminos" class="form-check-input mr-2" id="terminos">Acepto terminos y condiciones
+                            </label>
+                        </label>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>
