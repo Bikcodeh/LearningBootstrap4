@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Formularios grid</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row mt-3 justify-content-center">
+            <div class="col-12 col-md-6">
+                <form action="">
+
+                    <div class="form-group row">
+                        <!-- .col-md-6  Le estamos diciendo, que en tamanio medium largo y extra largo, tome 6 columnas-->
+                        <!-- .col-12    Le estamos diciendo que de pequenio para atras, tome de a 12 columnas-->
+                        <div class="col-12 col-md-6 mb-2">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre">
+                        </div>
+
+                        <div class="col-md-6 mb-2">
+                            <label for="pass">Password</label>
+                            <input type="password" class="form-control" name="pass" id="password"
+                                placeholder="Password">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-12 col-md-6 mb-2">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea name="mensaje" id="mensaje" class="form-control"></textarea>
+                        </div>
+
+                        <div class="col-12 col-md-3 mb-2">
+                            <label>Sexo</label>
+                            <div class="form-check">
+                                <label for="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" name="sexo" class="form-check-input mr-2" id="hombre">Hombre
+                                    </label>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label for="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" name="sexo" class="form-check-input mr-2" id="mujer">Mujer
+                                    </label>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-3 mb-2">
+                            <label for="pais">Pais</label>
+                            <select class="form-control" name="pais" id="pais">
+                                <option value="mexico">Mexico</option>
+                                <option value="colombia">Colombia</option>
+                                <option value="Venezuela">Venezuela</option>
+                                <option value="chile">Chile</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-12 text-center">
+                            <label class="form-check-label mb-2">
+                                <input type="checkbox" name="terminos" class="form-check-input mr-2"
+                                    id="terminos">Acepto terminos y condiciones
+                            </label>
+                            <div class="row justify-content-center">
+                                <div class="col-12 col-sm-9 col-md-4">
+                                    <button class="btn btn-primary btn-block" type="submit">Enviar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>
