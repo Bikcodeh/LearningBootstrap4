@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Popover</title>
+    
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col">
+                <h2>Popover</h2>
+                <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover"
+                    title="Titulo de PopOver" data-placement="top"
+                    data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                    Popover on top
+                </button>
+
+                <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover"
+                    data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                    Popover on right
+                </button>
+
+                <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover"
+                    data-placement="bottom" data-content="Vivamus
+sagittis lacus vel augue laoreet rutrum faucibus.">
+                    Popover on bottom
+                </button>
+
+                <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover"
+                    data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                    Popover on left
+                </button>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title"
+                    data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle
+                    popover</button>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <h2>Popover que se desaparece a cualquier click</h2>
+                <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="focus"
+                    title="Dismissible popover"
+                    data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/tether.min.js"></script>
+    <script src="js/popover.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
+
+        $('.popover-dismiss').popover({
+            trigger: 'focus'
+        })
+    </script>
+</body>
+
+</html>
