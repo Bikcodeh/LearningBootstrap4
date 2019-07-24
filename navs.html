@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Navs</title>
+    <style>
+        .fm-nav{
+            background: #000;
+        }
+
+        .fm-nav a{
+            color: #fff;
+            padding: 15px;
+        }
+
+        .fm-nav .disabled{
+            color: rgba(255, 255, 255, .5);
+        }
+
+        .fm-nav a:hover{
+            background: rgba(255, 255, 255, .1);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col">
+                <h3>Menu con ul</h3>
+                <hr>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Proximamente</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Nav con modificaciones CSS-->
+            <div class="col">
+                <h3>Menu con estilos CSS</h3>
+                <hr>
+                <ul class="fm-nav nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Proximamente</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Podemos ahorrarnos codigo, en vez de crear UL y luego LI'S 
+                    podemos crear directamente con el NAV-->
+            <div class="col-12 mt-4">
+                <h3>Menu creado directamente con Nav</h3>
+                <hr>
+                <nav class="nav">
+                    <a href="" class="nav-link">Inicio</a>
+                    <a href="" class="nav-link">Blog</a>
+                    <a href="" class="nav-link disabled">Proximamente</a>
+                    <a href="" class="nav-link">Contacto</a>
+                </nav>
+            </div>
+
+            <!-- Usando Flexbox, centramos todo el menu con su contenido -->
+             <div class="col-12 mt-4">
+                 <h3>Alineando el menu con Flexbox</h3>
+                 <hr>
+                <nav class="nav justify-content-center">
+                    <a href="" class="nav-link">Inicio</a>
+                    <a href="" class="nav-link">Blog</a>
+                    <a href="" class="nav-link disabled">Proximamente</a>
+                    <a href="" class="nav-link">Contacto</a>
+                </nav>
+            </div>
+
+            <div class="col-12 mt-4">
+                 <h3>Menu vertical con flexbox</h3>
+                 <hr>
+                <nav class="nav flex-column">
+                    <a href="" class="nav-link">Inicio</a>
+                    <a href="" class="nav-link">Blog</a>
+                    <a href="" class="nav-link disabled">Proximamente</a>
+                    <a href="" class="nav-link">Contacto</a>
+                </nav>
+            </div>
+
+            <!-- Usando felxbox colocamos el menu en vertical y lo personalizamos con CSS-->
+            <div class="col-12 mt-4">
+                 <h3>Menu vertical con flexbox y CSS</h3>
+                 <hr>
+                <nav class="fm-nav nav flex-column">
+                    <a href="" class="nav-link">Inicio</a>
+                    <a href="" class="nav-link">Blog</a>
+                    <a href="" class="nav-link disabled" disabled>Proximamente</a>
+                    <a href="" class="nav-link">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
