@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Navbar</title>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        body {
+            /*padding-top: 56px;*/
+            /*padding-bottom: 56px;*/
+        }
+
+        @media screen and (max-width:576px) {
+            .container {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- con navbar-expand-lg le decimos que muestre todo el navbar solo en pantallas grandes en adelante,
+        de resto que se oculte y muestre el boton para dispositivos mas pequenios-->
+    <nav class="navbar navbar-expand-lg  navbar-light bg-light">
+        <!-- Creamos el boton para cuando desaparece el navbar que aparezca el boton para dispositivos moviles -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--  .collapse navbar-collapse
+            Nos permiten que el menu se oculte en dispositivos moviles junto con sus elemento-->
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="#">Hidden brand</a>
+            <!-- Con navbar-nav le estamos diciendo que va a ser el contenedor de los elementos del menu,
+                    que seran los enlaces -->
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <!-- Enlace con dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="menu-categorias" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Link</a>
+                    <div class="dropdown-menu" aria-labelledby="menu-categorias">
+                        <a class="dropdown-item" href="#">Hola</a>
+                        <a class="dropdown-item" href="#">Mundo</a>
+                        <a class="dropdown-item" href="#">Je</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row mt-3">
+            <div class="jumbotron">
+                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, velit.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col">
+                <p>Hola mundo</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popover.js"></script>
+</body>
+
+</html>
