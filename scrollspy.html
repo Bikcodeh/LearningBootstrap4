@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Scrollspy</title>
+    <style>
+        body {
+            position: relative;
+            /* padding-top: 54px; */
+            /*Al colocar el paddin-top de 100 px, ya no es necesario el padding top del body*/
+        }
+
+        .vh-nav a {
+            color: #fff;
+            padding: 15px;
+        }
+
+        .vh-nav .active,
+        .vh-nav a:hover {
+            background: rgba(255, 255, 255, .1);
+        }
+
+        .seccion{
+            margin-bottom: 1000px;
+        }
+
+        .seccion .columna{
+            padding-top: 100px;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target="#vh-nav">
+    <!-- PARA QUE FUNCIONE EL SCROLLSPY EL POSITION DEL BODY DEBE SER RELATIVE  -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div id="vh-nav">
+                    <ul class="vh-nav nav fixed-top text-white bg-primary">
+                        <li class="nav-item">
+                            <a href="#seccion1" class="nav-link">Seccion #1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#seccion2" class="nav-link">Seccion #2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#seccion3" class="nav-link">Seccion #3</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row seccion" id="seccion1">
+            <div class="col-12 columna">
+                <h2>Seccion 1</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto culpa repellendus architecto
+                    reiciendis? Dolor molestiae quas facere exercitationem quo reiciendis doloremque excepturi ipsa
+                    voluptatibus eius ipsam, eaque, dolorum iure sequi.
+                </p>
+            </div>
+        </div>
+
+        <div class="row seccion" id="seccion2">
+            <div class="col-12 columna">
+                <h2>Seccion 2</h2>
+                <p>
+                    MASAKIO
+                </p>
+            </div>
+        </div>
+
+        <div class="row seccion" id="seccion3">
+            <div class="col-12 columna">
+                <h2>Seccion 3</h2>
+                <p>
+                    KHA
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
