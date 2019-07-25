@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Flexbox3</title>
+</head>
+<style>
+    .contenedor {
+        margin-bottom: 20px;
+        background: #0275d8;
+        color: #fff;
+    }
+
+    .contenedor div {
+        background: rgba(255, 255, 255, .2);
+        padding: 15px;
+        border: 1px solid #000;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <div class="row my-3">
+            <div class="col">
+                <h4>Wrap</h4>
+                <hr>
+                <p class="display-4 lead"><strong>.flex-nowrap</strong></p>
+                <!-- Wrap -- Encerrar elementos o envolverlos -->
+
+                <div class="contenedor d-flex flex-nowrap">
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                    <div>Caja 4</div>
+                    <div>Caja 5</div>
+                    <div>Caja 6</div>
+                    <div>Caja 7</div>
+                    <div>Caja 8</div>
+                    <div>Caja 9</div>
+                    <div>Caja 10</div>
+                    <div>Caja 11</div>
+                    <div>Caja 12</div>
+                    <div>Caja 13</div>
+                    <div>Caja 14</div>
+                    <div>Caja 15</div>
+                </div>
+
+                <p class="display-4 lead"><strong>flex-wrap</strong></p>
+                <p class="lead">Con <strong>.flex-wrap</strong> cuando el ultimo elemento no cabe, automaticamente crea
+                    una nueva fila y acomoda los elementos para que no se descojone el contenedor y sus elementos</p>
+                <div class="contenedor d-flex flex-wrap">
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                    <div>Caja 4</div>
+                    <div>Caja 5</div>
+                    <div>Caja 6</div>
+                    <div>Caja 7</div>
+                    <div>Caja 8</div>
+                    <div>Caja 9</div>
+                    <div>Caja 10</div>
+                    <div>Caja 11</div>
+                    <div>Caja 12</div>
+                    <div>Caja 13</div>
+                    <div>Caja 14</div>
+                    <div>Caja 15</div>
+                </div>
+
+                <p class="display-4 lead"><strong>flex-wrap-reverse</strong></p>
+                <p class="lead">Con <strong>.flex-wrap</strong> cuando el ultimo elemento no cabe, automaticamente crea
+                    una nueva fila y acomoda los elementos para que no se descojone el contenedor y sus elementos,
+                    <strong>pero</strong>
+                    invierte el orden</p>
+                <div class="contenedor d-flex flex-wrap-reverse">
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                    <div>Caja 4</div>
+                    <div>Caja 5</div>
+                    <div>Caja 6</div>
+                    <div>Caja 7</div>
+                    <div>Caja 8</div>
+                    <div>Caja 9</div>
+                    <div>Caja 10</div>
+                    <div>Caja 11</div>
+                    <div>Caja 12</div>
+                    <div>Caja 13</div>
+                    <div>Caja 14</div>
+                    <div>Caja 15</div>
+                </div>
+                <!-- Variantes:
+					.flex-nowrap
+					.flex-wrap
+					.flex-wrap-reverse
+					.flex-sm-nowrap
+					.flex-sm-wrap
+					.flex-sm-wrap-reverse
+					.flex-md-nowrap
+					.flex-md-wrap
+					.flex-md-wrap-reverse
+					.flex-lg-nowrap
+					.flex-lg-wrap
+					.flex-lg-wrap-reverse
+					.flex-xl-nowrap
+					.flex-xl-wrap
+					.flex-xl-wrap-reverse
+				-->
+            </div>
+        </div>
+
+        <div class="row my-3">
+            <div class="col">
+                <!-- 
+                    Variantes:
+
+                    .order-0
+                    .order-1
+                    .order-2
+                    .order-3
+                    .order-4
+                    .order-5
+                    .order-6
+                    .order-7
+                    .order-8
+                    .order-9
+                    .order-10
+                    .order-11
+                    .order-12
+                    .order-sm-0
+                    .order-sm-1
+                    .order-sm-2
+                    .order-sm-3
+                    .order-sm-4
+                    .order-sm-5
+                    .order-sm-6
+                    .order-sm-7
+                    .order-sm-8
+                    .order-sm-9
+                    .order-sm-10
+                    .order-sm-11
+                    .order-sm-12
+                    .order-md-0
+                    .order-md-1
+                    .order-md-2
+                    .order-md-3
+                    .order-md-4
+                    .order-md-5
+                    .order-md-6
+                    .order-md-7
+                    .order-md-8
+                    .order-md-9
+                    .order-md-10
+                    .order-md-11
+                    .order-md-12
+                    .order-lg-0
+                    .order-lg-1
+                    .order-lg-2
+                    .order-lg-3
+                    .order-lg-4
+                    .order-lg-5
+                    .order-lg-6
+                    .order-lg-7
+                    .order-lg-8
+                    .order-lg-9
+                    .order-lg-10
+                    .order-lg-11
+                    .order-lg-12
+                    .order-xl-0
+                    .order-xl-1
+                    .order-xl-2
+                    .order-xl-3
+                    .order-xl-4
+                    .order-xl-5
+                    .order-xl-6
+                    .order-xl-7
+                    .order-xl-8
+                    .order-xl-9
+                    .order-xl-10
+                    .order-xl-11
+                    .order-xl-12
+                -->
+                <h4>Order</h4>
+                <hr>
+                <div class="contenedor d-flex flex-nowrap">
+                    <div class="order-0">Caja 1</div>
+                    <div class="order-2">Caja 2</div>
+                    <div class="order-1">Caja 3</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row my-3">
+            <div class="col">
+                <h4>Align content</h4>
+                <hr>
+                <p class="display-4 lead"><strong>.align-content-start</strong></p>
+                <p class="lead">Para alinear las filas al inicio</p>
+                <div class="contenedor d-flex align-content-start flex-wrap" style="height: 200px;">
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                    <div>Caja 4</div>
+                    <div>Caja 5</div>
+                    <div>Caja 6</div>
+                    <div>Caja 7</div>
+                    <div>Caja 8</div>
+                    <div>Caja 9</div>
+                    <div>Caja 10</div>
+                    <div>Caja 11</div>
+                    <div>Caja 12</div>
+                    <div>Caja 13</div>
+                    <div>Caja 14</div>
+                    <div>Caja 15</div>
+                </div>
+                <p class="display-4 lead"><strong>.align-content-center</strong></p>
+                <p class="lead">Para alinear las filas al centro</p>
+                <div class="contenedor d-flex align-content-center flex-wrap" style="height: 200px;">
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                    <div>Caja 4</div>
+                    <div>Caja 5</div>
+                    <div>Caja 6</div>
+                    <div>Caja 7</div>
+                    <div>Caja 8</div>
+                    <div>Caja 9</div>
+                    <div>Caja 10</div>
+                    <div>Caja 11</div>
+                    <div>Caja 12</div>
+                    <div>Caja 13</div>
+                    <div>Caja 14</div>
+                    <div>Caja 15</div>
+                </div>
+                <p class="display-4 lead"><strong>.align-content-end</strong></p>
+                <p class="lead">Para alinear las filas al final</p>
+                <div class="contenedor d-flex align-content-end flex-wrap" style="height: 200px;">
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                    <div>Caja 4</div>
+                    <div>Caja 5</div>
+                    <div>Caja 6</div>
+                    <div>Caja 7</div>
+                    <div>Caja 8</div>
+                    <div>Caja 9</div>
+                    <div>Caja 10</div>
+                    <div>Caja 11</div>
+                    <div>Caja 12</div>
+                    <div>Caja 13</div>
+                    <div>Caja 14</div>
+                    <div>Caja 15</div>
+                </div>
+                <p class="display-4 lead"><strong>.align-content-between</strong></p>
+                <p class="lead">Para alinear las filas tanto arriba como abajo</p>
+                <div class="contenedor d-flex align-content-between flex-wrap" style="height: 200px;">
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                    <div>Caja 4</div>
+                    <div>Caja 5</div>
+                    <div>Caja 6</div>
+                    <div>Caja 7</div>
+                    <div>Caja 8</div>
+                    <div>Caja 9</div>
+                    <div>Caja 10</div>
+                    <div>Caja 11</div>
+                    <div>Caja 12</div>
+                    <div>Caja 13</div>
+                    <div>Caja 14</div>
+                    <div>Caja 15</div>
+                </div>
+                <p class="display-4 lead"><strong>.align-content-around</strong></p>
+                <p class="lead">Para alinear las filas tanto arriba como abajo, pero dejando espacio</p>
+                <div class="contenedor d-flex align-content-around flex-wrap" style="height: 200px;">
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                    <div>Caja 4</div>
+                    <div>Caja 5</div>
+                    <div>Caja 6</div>
+                    <div>Caja 7</div>
+                    <div>Caja 8</div>
+                    <div>Caja 9</div>
+                    <div>Caja 10</div>
+                    <div>Caja 11</div>
+                    <div>Caja 12</div>
+                    <div>Caja 13</div>
+                    <div>Caja 14</div>
+                    <div>Caja 15</div>
+                </div>
+                <p class="display-4 lead"><strong>.align-content-stretch</strong></p>
+                <p class="lead">Para que las filas con sus elemento tomen todo el ancho</p>
+                <div class="contenedor d-flex align-content-stretch flex-wrap" style="height: 200px;">
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                    <div>Caja 4</div>
+                    <div>Caja 5</div>
+                    <div>Caja 6</div>
+                    <div>Caja 7</div>
+                    <div>Caja 8</div>
+                    <div>Caja 9</div>
+                    <div>Caja 10</div>
+                    <div>Caja 11</div>
+                    <div>Caja 12</div>
+                    <div>Caja 13</div>
+                    <div>Caja 14</div>
+                    <div>Caja 15</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>
