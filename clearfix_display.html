@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Clearfix y display</title>
+    <style>
+        .caja{
+            width: 100px;
+            height: 100px;
+            background: #000;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row my-3">
+            <div class="col">
+                <!-- Los divs son elementos de tipo bloque, por lo tanto abarcan el tamano total
+                    de lo que tenga disponible-->
+                <div class="bg-primary text-white p-2 mb-4">Elemento de tipo bloque</div>
+                <!-- Ocupan solo lo necesario-->
+                <!-- A los elementos de tipo linea, no les surge efecto el mb-4, el p-2 etc,
+                    deben ser de tipo bloque en linea, por eso se les agrega el d-inline-block -->
+                <span class="bg-success d-inline-block text-white p-2 mb-4">Elemento de tipo linea(Convertido a inline-block)</span>
+                <span class="bg-success d-inline-block text-white p-2 mb-4">Elemento de tipo linea(Convertido a inline-block)</span>
+                <!--El div se hace abajo ya que no cabe, si no se haria al lado de los span -->
+                <div class="bg-primary d-inline-block text-white p-2 mb-4">Elemento de tipo bloque(Convertido a inline-block)</div>
+
+                <span class="bg-success d-block text-white p-2 mb-4">Elemento de tipo linea(Convertido a block)</span>
+
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col">
+                <!-- Al hacer flotar dos elementos(tal vez mas) con el  float-left y float-right, se desaparece 
+                    el contenedor padre, para que no suceda, se usa el clearfix-->
+                <div class="bg-primary clearfix">
+                    <div class="caja float-left d-inline-block"></div>
+                    <div class="caja float-right d-inline-block"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
