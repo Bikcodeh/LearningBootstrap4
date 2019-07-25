@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Plantilla</title>
+    <style>
+        .contenedor {
+            margin-bottom: 20px;
+            background: #0275d8;
+            color: #fff;
+        }
+
+        .contenedor div {
+            background: rgba(255, 255, 255, .2);
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col">
+                <h4>Tipos de display Flex</h4>
+                <hr>
+                <!-- 
+				Podemos establecer que tipo de elemento flexbox sera, de tipo block o inline.
+				Y podemos establecer tambien desde que dispositivo lo sera.
+
+					.d-flex
+                    .d-inline-flex
+                    
+                    Cuando se usa .d-flex el contenedor toma todo el ancho de espacio disponible
+                    Cuando se usa .d-inline-flex el contenedor solo toma el espacio necesario
+
+					.d-sm-flex
+					.d-sm-inline-flex
+					.d-md-flex
+					.d-md-inline-flex
+					.d-lg-flex
+					.d-lg-inline-flex
+					.d-xl-flex
+					.d-xl-inline-flex
+				 -->
+                <p><strong>.d-flex</strong></p>
+                <p class="lead">Cuando se usa <strong>.d-flex</strong> el contenedor toma todo el ancho de espacio disponible</p>
+                <div class="d-flex p-3 bg-primary text-white">
+                    <p class="mb-0">Display Flex <strong>.d-flex</strong></p>
+                </div>
+                <br>
+                <p><strong>.d-inline-flex</strong></p>
+                <p class="lead">Cuando se usa <strong>.d-inline-flex</strong> el contenedor solo toma el espacio necesario</p>
+                <div class="d-inline-flex p-3 bg-primary text-white">
+                    <p class="mb-0">Display inline Flex <strong>.d-inline-flex</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row my-4">
+            <div class="col">
+
+                <h4>Direccion</h4>
+                <!-- Variantes
+				    .flex-row
+				    .flex-row-reverse
+				    .flex-column
+				    .flex-column-reverse
+				    .flex-sm-row
+				    .flex-sm-row-reverse
+				    .flex-sm-column
+				    .flex-sm-column-reverse
+				    .flex-md-row
+				    .flex-md-row-reverse
+				    .flex-md-column
+				    .flex-md-column-reverse
+				    .flex-lg-row
+				    .flex-lg-row-reverse
+				    .flex-lg-column
+				    .flex-lg-column-reverse
+				    .flex-xl-row
+				    .flex-xl-row-reverse
+				    .flex-xl-column
+				    .flex-xl-column-reverse
+				 -->
+                <hr>
+                <!-- Para trabajar con los divs que dicen caja 1, caja 2, caja 3 de manera flex, entonces al 
+                        contenedor padre le debo de decir que sera display-flex por eso el div tiene 
+                        la clase .d-flex o .d-inline-flex -->
+                <p><strong>.flex-row</strong> </p>
+                <p class="lead">Con <strong>.flex-row</strong>  podemos alinear los elementos uno al lado del otro, empezando de derecha a
+                    izquierda</p>
+                <!-- Con .flex-row podemos alinear los elementos uno al lado del otro -->
+                <div class="contenedor d-flex flex-row">
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                </div>
+                <p><strong>.flex-row-reverse</strong> </p>
+                <p class="lead">Con <strong>.flex-row-reverse</strong>  podemos alinear los elementos uno al lado del otro, pero esta vez
+                    empezando
+                    de izquierda a derecha</p>
+                <!-- Con .flex-row-reverse podemos alinear los elementos uno al lado del otro, pero esta vez empezando
+                    de izquierda a derecha -->
+                <div class="contenedor d-flex flex-row-reverse">
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                </div>
+                <p><strong>.flex-column</strong> </p>
+                <p class="lead">Con <strong>.flex-column</strong>  ponemos los elementos verticalmente y cada hijo ocupara el total de
+                    ancho disponible</p>
+                <!-- Con .flex-column ponemos alineamos los elementos verticalmente y cada hijo ocupara el total de ancho disponible -->
+                <div class="contenedor d-flex flex-column">
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                </div>
+                <p><strong>.flex-column-reverse</strong> </p>
+                <p class="lead">Con <strong>.flex-column-reverse</strong>  alineamos los elementos verticalmente, pero de manera inversa y
+                    cada hijo ocupara el total de ancho disponible</p>
+                <!-- Con .flex-column ponemos alineamos los elementos verticalmente, pero de manera inversa y cada hijo ocupara el total de ancho disponible -->
+                <div class="contenedor d-flex flex-column-reverse">
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row my-4">
+            <div class="col">
+                <h4>Justify Content</h4>
+                <!-- Variantes:
+					.justify-content-start
+					.justify-content-end
+					.justify-content-center
+					.justify-content-between
+					.justify-content-around
+					.justify-content-sm-start
+					.justify-content-sm-end
+					.justify-content-sm-center
+					.justify-content-sm-between
+					.justify-content-sm-around
+					.justify-content-md-start
+					.justify-content-md-end
+					.justify-content-md-center
+					.justify-content-md-between
+					.justify-content-md-around
+					.justify-content-lg-start
+					.justify-content-lg-end
+					.justify-content-lg-center
+					.justify-content-lg-between
+					.justify-content-lg-around
+					.justify-content-xl-start
+					.justify-content-xl-end
+					.justify-content-xl-center
+					.justify-content-xl-between
+					.justify-content-xl-around
+				 -->
+
+                <hr>
+                <p><strong>.justify-content-start</strong></p>
+                <p class="lead">Con <strong>.justify-content-start</strong> alineamos los elementos al inicio del contenedor padre</p>
+                <div class="contenedor d-flex justify-content-start">
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                </div>
+                <p><strong>.justify-content-center</strong></p>
+                <p class="lead">Con <strong>.justify-content-center</strong> alineamos los elementos en el centro del padre</p>
+                <div class="contenedor d-flex justify-content-center">
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                </div>
+                <p><strong>.justify-content-end</strong></p>
+                <p class="lead">Con <strong>.justify-content-end</strong> alineamos los elementos al final del padre</p>
+                <div class="contenedor d-flex justify-content-end">
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                </div>
+                <p><strong>.justify-content-between</strong></p>
+                <p class="lead">Con <strong>.justify-content-between</strong> repartimos los elementos en espacios repartidos</p>
+                <div class="contenedor d-flex justify-content-between">
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                </div>
+                <p><strong>.justify-content-around</strong></p>
+                <p class="lead">Con <strong>.justify-content-around</strong> repartimos los elementos en espacios repartidos, pero
+                    dejando espacio a los lados</p>
+                <div class="contenedor d-flex justify-content-around">
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>
